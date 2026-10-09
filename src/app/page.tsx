@@ -41,6 +41,33 @@ export default function Home() {
           />
         </div>
       </section>
+      <section id="problem" className="bg-[#12263F] mx-auto py-4 md:py-8 ">
+        <div
+          id="problem--container"
+          className="w-19/20 mx-auto md:flex md:justify-between items-end md:gap-10"
+        >
+          <div id="row--1" className="md:w-1/2">
+            <p className="text-[#12b76a] font-semibold uppercase text-xs mb-4">
+              a problem that has been hidden for years
+            </p>
+            <h2 className="text-[#fff] text-xl/6 font-semibold mb-8 md:mb-0">
+              Cooking Gas has become essential for everyday cooking, yet we
+              remain exposed to its unsafe side.
+            </h2>
+          </div>
+          <div id="row--2" className="md:w-1/2">
+            <p className="text-[#fff] font-thin text-xs mb-4">
+              We use it daily at home, commercially and in our offices.
+            </p>
+            <hr className="hidden md:block border-1 border-[#f59e0b] w-1/4 my-4" />
+            <p className="text-[#fff] font-thin text-xs ">
+              Unlike other energy tools, we not only feel unsafe using gas, we
+              also do not have a reliable way to measure or monitor our usage or
+              know when is is leaking.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
