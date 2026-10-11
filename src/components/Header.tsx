@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-[#FAF8F4] text-[#12263F]  border-b  border-[#12263F]/10">
-      <div className="flex justify-between py-4 w-19/20 md:mx-auto md:max-w-7xl md:items-center">
+      <div className="flex justify-between py-4 w-19/20 mx-auto md:max-w-7xl md:items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Image src="/logo.png" alt="EnTech Logo" width={38} height={38} />
           <h1 className="text-xl font-normal">EnTech</h1>
