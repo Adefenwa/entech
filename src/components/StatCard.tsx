@@ -26,18 +26,23 @@ function StatIcon({ kind }: { kind: Stat["kind"] }) {
 
 export default function StatCard({ stat }: { stat: Stat }) {
   return (
-    <article className="bg-[#fff] rounded-3xl border border-[#e5e7eb] p-4 md:p-6 flex flex-col gap-4 md:gap-6 w-full md:w-[calc(50%-1rem)] mb-3 md:mb-0">
-      <span
-        className={`flex h-10 w-10 items-center justify-center rounded-full ${
-          stat.kind === "public"
-            ? "bg-blue-50 text-brand"
-            : "bg-green-50 text-green-600"
-        }`}
-      >
-        <StatIcon kind={stat.kind} />
-      </span>
-      <h3 className="text-2xl/6 font-semibold text-[#12263F]">{stat.text}</h3>
-      <p className="text-[#6C7888] text-sm">
+    <article className="flex flex-col justify-between h-full bg-[#fff] rounded-3xl border border-[#e5e7eb] p-4 md:p-6  mb-3 md:mb-0">
+      <div className="mb-4 md:mb-6">
+        <span
+          className={`flex h-10 w-10 items-center justify-center rounded-full mb-4 ${
+            stat.kind === "public"
+              ? "bg-blue-50 text-brand"
+              : "bg-green-50 text-green-600"
+          }`}
+        >
+          <StatIcon kind={stat.kind} />
+        </span>
+        <h3 className="text-xl/6 font-semibold text-[#12263F] mb-4">
+          {stat.text}
+        </h3>
+      </div>
+
+      <p className="text-[#6C7888] text-sm  ">
         {stat.source} · {stat.date}
       </p>
     </article>

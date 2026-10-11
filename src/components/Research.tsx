@@ -27,10 +27,13 @@ export default function Research() {
         </div>
         <ul
           id="cards"
-          className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 lg:grid lg:grid-cols-5 lg:overflow-visible lg:pb-0"
+          className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-5 md:overflow-visible md:pb-0"
         >
           {stats.map((stat) => (
-            <li key={stat.id} className="w-[70%] shrink-0 snap-start lg:w-auto">
+            <li
+              key={stat.id}
+              className="w-[70%] shrink-0 snap-start md:w-full md:shrink-1 md:snap-none"
+            >
               <StatCard stat={stat} />
             </li>
           ))}

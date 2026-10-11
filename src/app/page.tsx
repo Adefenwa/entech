@@ -42,7 +42,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section id="problem" className="bg-[#12263F] mx-auto py-20 md:py-8 ">
+      <section id="problem" className="bg-[#12263F] mx-auto py-20 md:py-20 ">
         <div
           id="problem--container"
           className="w-19/20 mx-auto md:flex md:justify-between items-end md:gap-10"
