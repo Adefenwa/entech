@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Research from "@/components/Research";
 export default function Home() {
   const productLinkClassName =
     "flex items-center gap-2 w-48 bg-[#F59E0B] text-[#12263F] px-4 py-2 rounded-full font-light hover:bg-[#D97706] transition-colors";
@@ -68,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Research />
     </main>
   );
 }
