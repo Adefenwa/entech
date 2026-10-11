@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-
+import StatCard from "./StatCard";
+import { stats } from "@/lib/stats";
 export default function Research() {
   return (
     <section className="bg-[#FAF8F4]  mx-auto py-4 md:py-8">
@@ -12,19 +13,28 @@ export default function Research() {
           It is also a National Problem.
         </h2>
         <div className="md:hidden flex items-center gap-4 justify-between">
-          <p className="text-[#6C7888] text-xs">Here is what we found...</p>
-          <div className="flex items-center gap-2">
+          <p className="text-[#6C7888] text-xs mb-4">
+            Here is what we found...
+          </p>
+          {/* <div className="flex items-center gap-2">
             <Link href="#" passHref>
               <ArrowLeft size={16} color="#12263F" strokeWidth={1.5} />
             </Link>
             <Link href="#" passHref>
               <ArrowRight size={16} color="#12263F" strokeWidth={1.5} />
             </Link>
-          </div>
+          </div> */}
         </div>
-        <div id="cards">
-            
-        </div>
+        <ul
+          id="cards"
+          className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-4 lg:grid lg:grid-cols-5 lg:overflow-visible lg:pb-0"
+        >
+          {stats.map((stat) => (
+            <li key={stat.id} className="w-[70%] shrink-0 snap-start lg:w-auto">
+              <StatCard stat={stat} />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
