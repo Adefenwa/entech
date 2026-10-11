@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Research from "@/components/Research";
+import Audience from "@/components/Audience";
 export default function Home() {
   const productLinkClassName =
     "flex items-center gap-2 w-48 bg-[#F59E0B] text-[#12263F] px-4 py-2 rounded-full font-light hover:bg-[#D97706] transition-colors";
@@ -10,7 +11,7 @@ export default function Home() {
     <main id="main">
       <section
         id="hero"
-        className="w-19/20 mx-auto py-4 md:py-8 md:flex md:justify-between md:items-center"
+        className="w-19/20 mx-auto py-4 md:py-8 md:flex md:justify-between md:gap-4 md:items-center"
       >
         <div className="md:w-1/2">
           <div className="bg-[#F59E0B]/25 px-4 py-2 rounded-full flex gap-2 items-center my-8 hover:bg-[#F59E0B]/40 transition-colors w-fit">
@@ -70,6 +71,7 @@ export default function Home() {
         </div>
       </section>
       <Research />
+      <Audience />
     </main>
   );
 }

@@ -37,7 +37,7 @@ export default function StatCard({ stat }: { stat: Stat }) {
         >
           <StatIcon kind={stat.kind} />
         </span>
-        <h3 className="text-xl/6 font-semibold text-[#12263F] mb-4">
+        <h3 className="text-xl/6 md:text-base font-semibold text-[#12263F] mb-4">
           {stat.text}
         </h3>
       </div>

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import StatCard from "./StatCard";
 import { stats } from "@/lib/stats";
 export default function Research() {
