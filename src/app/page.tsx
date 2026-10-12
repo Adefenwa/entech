@@ -79,7 +79,7 @@ export default function Home() {
       <Products />
       <section id="explore" className="bg-[#fff]">
         <div className="w-19/20 mx-auto py-20 md:flex md:items-center md:gap-3 md:justify-between">
-          <div id="row--1" className="w-1/2">
+          <div id="row--1" className="md:w-1/2">
             <p className={greenTextClassName}>ready to explore?</p>
             <h2 className="text-[#12263F] text-2xl/6 font-semibold mb-2">
               See the products and request a free in-person demo.
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div
             id="row--2"
-            className="w-[20%] py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b] mt-3"
+            className="md:w-[20%] py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b] mt-3"
           >
             <Link href="/products">See the Products </Link>
           </div>

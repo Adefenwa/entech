@@ -16,7 +16,7 @@ export default function Products() {
           Two focused tools for LPG safety
         </h2>
         <div id="product--cards" className="md:flex md:items-center md:gap-3">
-          <div id="product--card" className="w-1/2 bg-[#fff] p-4 rounded-xl">
+          <div id="product--card" className="md:w-1/2 bg-[#fff] p-4 rounded-xl">
             <div
               id="placeholder"
               className="w-full h-40 bg-[#FDECEA] rounded-lg"
@@ -55,7 +55,7 @@ export default function Products() {
           </div>
           <div
             id="product--card"
-            className="w-1/2 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
+            className="md:w-1/2 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
           >
             <div
               id="placeholder"
