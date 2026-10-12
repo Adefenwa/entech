@@ -3,9 +3,13 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Research from "@/components/Research";
 import Audience from "@/components/Audience";
+import Products from "@/components/Products";
 export default function Home() {
   const productLinkClassName =
     "flex items-center gap-2 w-48 bg-[#F59E0B] text-[#12263F] px-4 py-2 rounded-full font-light hover:bg-[#D97706] transition-colors";
+
+  const greenTextClassName =
+    "text-[#12b76a] font-semibold uppercase text-xs mb-4";
 
   return (
     <main id="main">
@@ -72,6 +76,27 @@ export default function Home() {
       </section>
       <Research />
       <Audience />
+      <Products />
+      <section id="explore" className="bg-[#fff]">
+        <div className="w-19/20 mx-auto py-20 md:flex md:items-center md:gap-3 md:justify-between">
+          <div id="row--1" className="w-1/2">
+            <p className={greenTextClassName}>ready to explore?</p>
+            <h2 className="text-[#12263F] text-2xl/6 font-semibold mb-2">
+              See the products and request a free in-person demo.
+            </h2>
+            <p className="text-xs font-thin text-[#12263f]">
+              No payment is taken now or on this site. You pay only after
+              testing.
+            </p>
+          </div>
+          <div
+            id="row--2"
+            className="w-[20%] py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b] mt-3"
+          >
+            <Link href="/products">See the Products </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
