@@ -1,10 +1,13 @@
 import { Volume2, Check } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 export default function Products() {
   const greenTextClassName =
     "text-[#12b76a] font-semibold uppercase text-xs mb-4";
   const listClassName =
     "flex items-center gap-3 text-[#12263f] text-xs font-thin my-3";
+  const buttonClassName =
+    "py-2 bg-amber-300 hover:bg-amber-200 pointer rounded-full text-[#12263f] font-bold text-sm text-center";
   return (
     <section
       id="what-we-are-building"
@@ -15,12 +18,19 @@ export default function Products() {
         <h2 className="text-[#12263F] text-2xl/6 font-bold mb-8">
           Two focused tools for LPG safety
         </h2>
-        <div id="product--cards" className="md:flex md:items-center md:gap-3">
-          <div id="product--card" className="md:w-1/2 bg-[#fff] p-4 rounded-xl">
-            <div
-              id="placeholder"
-              className="w-full h-40 bg-[#FDECEA] rounded-lg"
-            ></div>
+        <div
+          id="product--cards"
+          className="md:flex md:items-center md:justify-between"
+        >
+          <div id="product--card" className="md:w-1/3 bg-[#fff] p-4 rounded-xl">
+            <div id="placeholder" className="w-full rounded-lg">
+              <Image
+                src="/product-one.jpeg"
+                width={500}
+                height={300}
+                alt="gas leakage detector placed on the wall"
+              />
+            </div>
             <div id="product--body" className="my-4">
               <h4 className="text-lg text-[#12263f] font-bold">
                 Gas Leakage Detector
@@ -48,14 +58,14 @@ export default function Products() {
                   Sends a remote alert to your phone
                 </li>
               </ul>
-              <div className="py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b]">
+              <div className={buttonClassName}>
                 <Link href="/products">Explore the Product </Link>
               </div>
             </div>
           </div>
           <div
             id="product--card"
-            className="md:w-1/2 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
+            className="md:w-1/3 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
           >
             <div
               id="placeholder"
@@ -86,7 +96,7 @@ export default function Products() {
                   Sends a low-gas alert to your phone
                 </li>
               </ul>
-              <div className="py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b]">
+              <div className={buttonClassName}>
                 <Link href="/products">Explore the Product </Link>
               </div>
             </div>

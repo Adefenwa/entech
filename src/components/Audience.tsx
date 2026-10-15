@@ -25,7 +25,7 @@ export default function Audience() {
         >
           <div id="audience--card" className={cardClassName}>
             <Image
-              src="/card-one.png"
+              src="/card-one.jpg"
               alt="Household Scene"
               width={500}
               height={300}
@@ -39,7 +39,7 @@ export default function Audience() {
           </div>
           <div id="audience--card" className={cardClassName}>
             <Image
-              src="/card-two.png"
+              src="/card-two.jpg"
               alt="Commercial Kitchen Scene"
               width={500}
               height={300}
@@ -53,7 +53,7 @@ export default function Audience() {
           </div>
           <div id="audience--card" className={cardClassName}>
             <Image
-              src="/card-three.png"
+              src="/card-three.jpg"
               alt="Two guys carrying a gas cylinder"
               width={500}
               height={300}

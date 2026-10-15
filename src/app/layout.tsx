@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Parkinsans } from "next/font/google";
+import { Parkinsans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const bricolageGrotesque = Bricolage_Grotesque({
-  variable: "--font-bricolage",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+// const bricolageGrotesque = Bricolage_Grotesque({
+//   variable: "--font-bricolage",
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+// });
 
 const parkinsans = Parkinsans({
   variable: "--font-parkinsans",

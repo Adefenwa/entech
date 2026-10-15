@@ -15,7 +15,7 @@ export default function Home() {
     <main id="main">
       <section
         id="hero"
-        className="w-19/20 mx-auto py-4 pb-80 md:py-8 md:flex md:justify-between md:gap-4 md:items-center "
+        className="w-19/20 mx-auto py-4 md:py-8 md:flex md:justify-between md:gap-4 md:items-center "
       >
         <div className="md:w-1/2">
           <div className="bg-[#000]/25 px-4 py-2 rounded-full flex gap-2 items-center cursor-pointer my-8 hover:bg-[#000]/40 transition-colors w-fit">
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div
             id="row--2"
-            className="md:w-[20%] py-2 hover:bg-[#f59e0b]/70 pointer rounded-full text-[#12263f] font-bold text-sm text-center bg-[#f59e0b] mt-3"
+            className="md:w-[20%] py-2 bg-amber-300 hover:bg-amber-200 pointer rounded-full text-[#12263f] font-bold text-sm text-center mt-3"
           >
             <Link href="/products">See the Products </Link>
           </div>
