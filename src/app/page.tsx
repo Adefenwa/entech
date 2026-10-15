@@ -24,7 +24,7 @@ export default function Home() {
               Early Access. Limited units
             </p>
           </div>
-          <h1 className="text-3xl font-bold text-[#12263F] my-4 uppercase">
+          <h1 className="text-3xl font-bold text-white my-4 uppercase">
             Never guess your gas level or worry about leaks again.
           </h1>
           <p className="text-white font-thin text-sm sm:text-base mb-7 ">
