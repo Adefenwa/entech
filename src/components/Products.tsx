@@ -20,14 +20,22 @@ export default function Products() {
         </h2>
         <div
           id="product--cards"
-          className="md:flex md:items-center md:justify-between"
+          className="md:flex md:items-center md:justify-between md:gap-4"
         >
-          <div id="product--card" className="md:w-1/3 bg-[#fff] p-4 rounded-xl">
+          <div id="product--card" className="md:w-1/2 bg-[#fff] p-4 rounded-xl">
             <div id="placeholder" className="w-full rounded-lg">
               <Image
                 src="/product-one.jpeg"
-                width={500}
-                height={300}
+                width={400}
+                height={200}
+                className="rounded-lg cursor-pointer md:hidden"
+                alt="gas leakage detector placed on the wall"
+              />
+              <Image
+                src="/product-one-desktop.jpeg"
+                width={600}
+                height={200}
+                className="rounded-lg cursor-pointer hidden md:block"
                 alt="gas leakage detector placed on the wall"
               />
             </div>
@@ -65,12 +73,24 @@ export default function Products() {
           </div>
           <div
             id="product--card"
-            className="md:w-1/3 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
+            className="md:w-1/2 bg-[#fff] p-4 rounded-xl mt-4 md:mt-0"
           >
-            <div
-              id="placeholder"
-              className="w-full h-40 bg-[#E8F8F0] rounded-lg"
-            ></div>
+            <div id="placeholder" className="w-full rounded-lg">
+              <Image
+                src="/product-two.jpeg"
+                width={400}
+                height={200}
+                className="rounded-lg cursor-pointer md:hidden"
+                alt="gas cylinder placed on the gas meter product"
+              />
+              <Image
+                src="/product-two-desktop.jpg"
+                width={600}
+                height={200}
+                className="rounded-lg cursor-pointer hidden md:block"
+                alt="gas cylinder placed on the gas meter product"
+              />
+            </div>
             <div id="product--body" className="my-4">
               <h4 className="text-lg text-[#12263f] font-bold">Gas Meter</h4>
               <p className="text-xs text-[#12263f] font-thin my-2">
