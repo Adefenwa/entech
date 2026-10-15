@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Parkinsans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const parkinsans = Parkinsans({
+  variable: "--font-parkinsans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -18,11 +24,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${bricolageGrotesque.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className={`${parkinsans.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[url('/hero-mobile.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat md:bg-[url('/hero-desktop.jpg')]">
         <Header />
         {children}
         <Footer />

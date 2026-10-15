@@ -1,12 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import Research from "@/components/Research";
 import Audience from "@/components/Audience";
 import Products from "@/components/Products";
 export default function Home() {
   const productLinkClassName =
-    "flex items-center gap-2 w-48 bg-[#F59E0B] text-[#12263F] px-4 py-2 rounded-full font-light hover:bg-[#D97706] transition-colors";
+    "flex items-center gap-2 w-48 bg-amber-300 text-[#12263F] px-4 py-2 rounded-full font-light hover:bg-amber-200 transition-colors";
 
   const greenTextClassName =
     "text-[#12b76a] font-semibold uppercase text-xs mb-4";
@@ -15,19 +15,19 @@ export default function Home() {
     <main id="main">
       <section
         id="hero"
-        className="w-19/20 mx-auto py-4 md:py-8 md:flex md:justify-between md:gap-4 md:items-center"
+        className="w-19/20 mx-auto py-4 pb-80 md:py-8 md:flex md:justify-between md:gap-4 md:items-center "
       >
         <div className="md:w-1/2">
-          <div className="bg-[#F59E0B]/25 px-4 py-2 rounded-full flex gap-2 items-center my-8 hover:bg-[#F59E0B]/40 transition-colors w-fit">
-            <div className="bg-[#f59e0b] w-2 h-2 rounded-full"></div>
-            <p className="text-[#12263F] text-xs font-thin">
+          <div className="bg-[#000]/25 px-4 py-2 rounded-full flex gap-2 items-center cursor-pointer my-8 hover:bg-[#000]/40 transition-colors w-fit">
+            <div className="bg-[#fff] w-2 h-2 rounded-full"></div>
+            <p className="text-[#fff] text-xs font-thin">
               Early Access. Limited units
             </p>
           </div>
-          <h1 className="text-3xl font-light text-[#12263F] my-4 uppercase">
+          <h1 className="text-3xl font-bold text-[#12263F] my-4 uppercase">
             Never guess your gas level or worry about leaks again.
           </h1>
-          <p className="text-[#12263F] font-thin text-sm sm:text-base mb-7 ">
+          <p className="text-white font-thin text-sm sm:text-base mb-7 ">
             Track your Gas usage in real-time and get notified the second a leak
             is detected, before it becomes a hazard.
           </p>
@@ -38,14 +38,14 @@ export default function Home() {
           </Link>
         </div>
 
-        <div id="image" className="my-8 md:w-1/2 flex justify-center">
+        {/* <div id="image" className="my-8 md:w-1/2 flex justify-center">
           <Image
             src="/hero-image.png"
             alt="Hero Image"
             width={500}
             height={300}
           />
-        </div>
+        </div> */}
       </section>
       <section id="problem" className="bg-[#12263F] mx-auto py-20 md:py-20 ">
         <div
