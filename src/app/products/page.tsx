@@ -209,6 +209,35 @@ export default function Products() {
           </div>
         </div>
       </section>
+      <section id="demo" className="bg-[#12263f] py-10">
+        <div id="container" className={containerClassName}>
+          <p className={greenTextClassName}>see how it works</p>
+          <h2 className="text-white text-2xl/6 font-semibold mb-2">
+            A quick look, from setup to everyday use
+          </h2>
+          <p className="text-gray-200 text-sm font-thin">
+            A short, captioned walkthrough of the early-access demo.
+          </p>
+          <div id="row" className="my-4">
+            <div className="flex justify-center">
+              <Image
+                src="/demo-mobile.png"
+                width={250}
+                height={100}
+                alt="demo video of the product"
+              />
+            </div>
+            <div id="storyboard">
+              <div id="row">
+                <p className="text-white font-medium text-xs">
+                  Storyboard . captions
+                </p>
+                <p>5 scenes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
