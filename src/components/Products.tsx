@@ -26,13 +26,13 @@ export default function Products() {
             <div id="placeholder" className="w-full rounded-lg">
               <Image
                 src="/product-one.jpeg"
-                width={400}
-                height={200}
+                width={500}
+                height={300}
                 className="rounded-lg cursor-pointer md:hidden"
                 alt="gas leakage detector placed on the wall"
               />
               <Image
-                src="/product-one-desktop.jpeg"
+                src="/product-one-desktop.jpg"
                 width={600}
                 height={200}
                 className="rounded-lg cursor-pointer hidden md:block"
@@ -78,8 +78,8 @@ export default function Products() {
             <div id="placeholder" className="w-full rounded-lg">
               <Image
                 src="/product-two.jpeg"
-                width={400}
-                height={200}
+                width={500}
+                height={300}
                 className="rounded-lg cursor-pointer md:hidden"
                 alt="gas cylinder placed on the gas meter product"
               />
