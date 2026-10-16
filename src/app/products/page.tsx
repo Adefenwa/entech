@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
+  Accessibility,
   BellRing,
   CircleCheck,
   MoonStar,
@@ -218,21 +219,97 @@ export default function Products() {
           <p className="text-gray-200 text-sm font-thin">
             A short, captioned walkthrough of the early-access demo.
           </p>
-          <div id="row" className="my-4">
+          <div
+            id="row"
+            className="my-4 md:flex md:items-center md:justify-between md:gap-2"
+          >
             <div className="flex justify-center">
               <Image
                 src="/demo-mobile.png"
                 width={250}
                 height={100}
+                className="md:hidden"
+                alt="demo video of the product"
+              />
+              <Image
+                src="/demo-desktop.png"
+                width={250}
+                height={100}
+                className="hidden md:block"
                 alt="demo video of the product"
               />
             </div>
-            <div id="storyboard">
-              <div id="row">
+            <div id="storyboard" className="my-4">
+              <div id="row" className="flex justify-between">
                 <p className="text-white font-medium text-xs">
                   Storyboard . captions
                 </p>
-                <p>5 scenes</p>
+                <p className="text-[#12b76a] text-xs">5 scenes</p>
+              </div>
+              <div id="captions" className="my-2">
+                <div
+                  id="caption"
+                  className="flex items-center bg-white/10 outline outline-white/30 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <p className="text-[#12263f] font-bold bg-amber-500 py-2 px-3.5 rounded-full">
+                    1
+                  </p>
+                  <p className="text-white">
+                    Plug in, power on, scan QR, connect Wi-Fi
+                  </p>
+                </div>
+                <div
+                  id="caption"
+                  className="flex items-center bg-white/10 outline outline-white/30 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <p className="text-[#12263f] font-bold bg-slate-300 py-2 px-3.5 rounded-full">
+                    2
+                  </p>
+                  <p className="text-white">App shows green &quot;Safe&quot;</p>
+                </div>
+                <div
+                  id="caption"
+                  className="flex items-center bg-red-200 outline outline-red-600 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <p className="text-white font-bold bg-red-600 py-2 px-3.5 rounded-full">
+                    3
+                  </p>
+                  <p className="text-red-600">
+                    Leak reading rises, red alarm ring, phone alert
+                  </p>
+                </div>
+                <div
+                  id="caption"
+                  className="flex items-center bg-white/10 outline outline-white/30 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <p className="text-[#12263f] font-bold bg-slate-300 py-2 px-3.5 rounded-full">
+                    4
+                  </p>
+                  <p className="text-white">
+                    Owner away at work receives notification with &quot;Call
+                    contact&quot;
+                  </p>
+                </div>
+                <div
+                  id="caption"
+                  className="flex items-center bg-white/10 outline outline-white/30 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <p className="text-[#12263f] font-bold bg-slate-300 py-2 px-3.5 rounded-full">
+                    5
+                  </p>
+                  <p className="text-white">
+                    End card &quot;See it in person&quot; with a button
+                  </p>
+                </div>
+                <div
+                  id="caption"
+                  className="flex items-center bg-white/5 rounded-lg p-2 text-xs gap-2 my-2"
+                >
+                  <Accessibility size={36} color="#12b76a" strokeWidth={2} />
+                  <p className="text-white">
+                    Reduced-motion mode shows static scenes with captions.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
