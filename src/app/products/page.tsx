@@ -1,11 +1,23 @@
 import Link from "next/link";
 import Image from "next/image";
-import { MoonStar, ShieldCheck, Vibrate } from "lucide-react";
+import {
+  BellRing,
+  CircleCheck,
+  MoonStar,
+  ScanLine,
+  ShieldCheck,
+  Vibrate,
+  Volume2,
+  Wifi,
+} from "lucide-react";
 
 export default function Products() {
   const greenTextClassName =
     "text-[#12b76a] font-semibold uppercase text-xs mb-4";
 
+  const headerClassName = "text-[#12263F] text-2xl/6 font-semibold mb-2";
+
+  const containerClassName = "w-19/20 mx-auto";
   return (
     <main id="wrapper" className="mt-5">
       <section id="switch" className="bg-[#FAF8F4]  px-4 py-10 ">
@@ -58,11 +70,9 @@ export default function Products() {
         </div>
       </section>
       <section id="advantages" className="bg-white py-10">
-        <div id="container" className="w-19/20 mx-auto">
+        <div id="container" className={containerClassName}>
           <p className={greenTextClassName}>how it betters your life</p>
-          <h2 className="text-[#12263F] text-2xl/6 font-semibold mb-2">
-            Everyday confidence, made clear
-          </h2>
+          <h2 className={headerClassName}>Everyday confidence, made clear</h2>
           <div
             id="merit-cards"
             className="my-4 md:flex md:justify-between md:gap-4"
@@ -112,7 +122,93 @@ export default function Products() {
           </div>
         </div>
       </section>
-      <section id="features"></section>
+      <section id="features" className="bg-[#FAF8F4] py-10">
+        <div id="container" className={containerClassName}>
+          <p className={greenTextClassName}>features</p>
+          <h2 className={headerClassName}>
+            Simple tools, focused on what matters
+          </h2>
+          <p className="text-sm my-4 font-thin text-[#12263f]/80">
+            These are the features confirmed for the current early-access
+            concept.
+          </p>
+          <div
+            id="features-cards"
+            className="grid grid-cols-2 grid-rows-2 gap-4 md:grid-cols-4 md:grid-rows-1"
+          >
+            <div
+              id="features-card"
+              className="bg-white p-4 rounded-lg outline outline-[#12263f]/10 shadow-lg"
+            >
+              <ScanLine
+                size={48}
+                color="#12263f"
+                strokeWidth={3}
+                className="bg-[#12263f]/10 p-3 rounded-full"
+              />
+              <p className="text-[#12263f] font-bold text-md my-3">
+                Gas detection
+              </p>
+              <p className="w-34 flex items-center gap-1 bg-[#12b76a]/10 p-3 rounded-full uppercase text-[#12b76a] font-bold text-sm ">
+                <CircleCheck size={16} color="#12b76a" strokeWidth={3} />
+                Confirmed
+              </p>
+            </div>
+            <div
+              id="features-card"
+              className="bg-white p-4 rounded-lg outline outline-[#12263f]/10 shadow-lg"
+            >
+              <Volume2
+                size={48}
+                color="#12263f"
+                strokeWidth={3}
+                className="bg-[#12263f]/10 p-3 rounded-full"
+              />
+              <p className="text-[#12263f] font-bold text-md my-3">
+                Loud alarm
+              </p>
+              <p className="w-34 flex items-center gap-1 bg-[#12b76a]/10 p-3 rounded-full uppercase text-[#12b76a] font-bold text-sm ">
+                <CircleCheck size={16} color="#12b76a" strokeWidth={3} />
+                Confirmed
+              </p>
+            </div>
+            <div
+              id="features-card"
+              className="bg-white p-4 rounded-lg outline outline-[#12263f]/10 shadow-lg"
+            >
+              <BellRing
+                size={48}
+                color="#12263f"
+                strokeWidth={3}
+                className="bg-[#12263f]/10 p-3 rounded-full"
+              />
+              <p className="text-[#12263f] font-bold text-md my-3">
+                Phone alert
+              </p>
+              <p className="w-34 flex items-center gap-1 bg-[#12b76a]/10 p-3 rounded-full uppercase text-[#12b76a] font-bold text-sm ">
+                <CircleCheck size={16} color="#12b76a" strokeWidth={3} />
+                Confirmed
+              </p>
+            </div>
+            <div
+              id="features-card"
+              className="bg-white p-4 rounded-lg outline outline-[#12263f]/10 shadow-lg "
+            >
+              <Wifi
+                size={48}
+                color="#12263f"
+                strokeWidth={3}
+                className="bg-[#12263f]/10 p-3 rounded-full"
+              />
+              <p className="text-[#12263f] font-bold text-md my-3">Wi-Fi</p>
+              <p className="w-34 flex items-center gap-1 bg-[#12b76a]/10 p-3 rounded-full uppercase text-[#12b76a] font-bold text-sm ">
+                <CircleCheck size={16} color="#12b76a" strokeWidth={3} />
+                Confirmed
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
