@@ -69,7 +69,7 @@ export default function Products() {
           >
             <div
               id="merit-card"
-              className="w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
+              className="md:w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
             >
               <MoonStar
                 size={30}
@@ -83,7 +83,7 @@ export default function Products() {
             </div>
             <div
               id="merit-card"
-              className="w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
+              className="md:w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
             >
               <Vibrate
                 size={30}
@@ -97,7 +97,7 @@ export default function Products() {
             </div>
             <div
               id="merit-card"
-              className="w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
+              className="md:w-1/3 p-4 outline outline-[#12263f]/30 rounded-2xl my-4"
             >
               <ShieldCheck
                 size={30}
