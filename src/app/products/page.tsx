@@ -221,9 +221,9 @@ export default function Products() {
           </p>
           <div
             id="row"
-            className="my-4 md:flex md:items-center md:justify-between md:gap-2"
+            className="my-4 md:flex md:items-start md:justify-between"
           >
-            <div className="flex justify-center">
+            <div className="flex justify-center md:w-2/4 md:justify-start">
               <Image
                 src="/demo-mobile.png"
                 width={250}
@@ -233,14 +233,14 @@ export default function Products() {
               />
               <Image
                 src="/demo-desktop.png"
-                width={250}
+                width={350}
                 height={100}
                 className="hidden md:block"
                 alt="demo video of the product"
               />
             </div>
-            <div id="storyboard" className="my-4">
-              <div id="row" className="flex justify-between">
+            <div id="storyboard" className="my-4 md:w-3/4 ">
+              <div id="row" className="flex justify-between md:my-4">
                 <p className="text-white font-medium text-xs">
                   Storyboard . captions
                 </p>
