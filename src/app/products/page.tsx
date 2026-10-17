@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   Accessibility,
+  ArrowRight,
   BellRing,
   CircleCheck,
   MoonStar,
@@ -312,6 +313,39 @@ export default function Products() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="early-access" className="bg-[#FAF8F4] py-10">
+        <div
+          id="box"
+          className="w-[90%] bg-white p-3 rounded-lg shadow-lg mx-auto md:flex md:items-center md:justify-between"
+        >
+          <div id="row" className="md:w[70%]">
+            <p className={greenTextClassName}>early access</p>
+            <h2 className={headerClassName}>
+              Early-access price <span className="font-sans font-bold">₦</span>
+              35,000
+            </h2>
+            <p className="font-medium text-sm text-[#12263f] my-3">
+              Free in-person demo. No payment now.
+            </p>
+            <p className="text-[#12263f]/80 text-xs my-3">
+              Handoff. configured variants{" "}
+              <span className="font-sans font-normal">₦</span>25,000 /{" "}
+              <span className="font-sans font-normal">₦</span>
+              35,000 / <span className="font-sans font-normal">₦</span>
+              45,000. one retained per session
+            </p>
+          </div>
+          <div id="button" className="md:w-[40%]">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-sm font-bold text-[#12263f] bg-amber-500 py-3 justify-center rounded-full"
+            >
+              Get the Device
+              <ArrowRight color="#12263f" size={16} strokeWidth={3} />{" "}
+            </Link>
           </div>
         </div>
       </section>
