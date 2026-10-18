@@ -7,7 +7,12 @@ import { useState } from "react";
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="md:hidden">
+    <div
+      className="md:hidden"
+      onKeyDown={(e) => {
+        if (e.key === "Escape") setIsOpen(false);
+      }}
+    >
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -25,6 +30,7 @@ export default function MobileMenu() {
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
+          aria-hidden="true"
         >
           {" "}
           {isOpen ? (
@@ -34,23 +40,29 @@ export default function MobileMenu() {
           )}{" "}
         </svg>
       </button>
-      {isOpen && (
-        <nav
-          id="mobile-menu"
-          aria-label="Mobile Navigation"
-          className="absolute top-full left-0 right-0 bg-[#FAF8F4] text-[#12263F] p-4 shadow-md transition-transform duration-300 ease-in-out"
-        >
-          <ul>
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} onClick={() => setIsOpen(false)}>
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      )}
+      <nav
+        id="mobile-menu"
+        aria-label="Mobile Navigation"
+        className={`absolute top-18 left-0 right-0 mx-auto w-19/20 origin-top rounded-lg bg-amber-50 p-4 text-[#12263F] shadow-md transition-all duration-200 ease-out motion-reduce:transition-none ${
+          isOpen
+            ? "visible translate-y-0 scale-100 opacity-100"
+            : "invisible pointer-events-none -translate-y-2 scale-95 opacity-0"
+        }`}
+      >
+        <ul>
+          {navLinks.map((link) => (
+            <li key={link.href} className="my-1">
+              <Link
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block rounded-md border border-transparent p-2 transition-colors duration-150 hover:border-amber-300 hover:bg-amber-100 active:bg-amber-200"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
 }
