@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${parkinsans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-black/40 bg-[url('/hero-mobile.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat bg-blend-multiply md:bg-[url('/hero-desktop.jpg')]">
+      <body className="min-h-full flex flex-col bg-black/40 bg-[url('/hero-image-900.webp')] bg-[length:100%_auto] bg-top bg-no-repeat bg-blend-multiply md:bg-[url('/hero-desktop.jpg')]">
         <Header />
         {children}
         <Footer />

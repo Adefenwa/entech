@@ -15,7 +15,7 @@ export default function Home() {
     <main id="main">
       <section
         id="hero"
-        className="w-19/20 mx-auto py-4 pb-50 md:py-8 md:flex md:justify-between md:gap-4 md:items-center "
+        className="w-19/20 mx-auto py-4 min-h-[calc(145vw-90px)] md:min-h-0 md:py-8 md:flex md:justify-between md:gap-4 md:items-center "
       >
         <div className="md:w-1/2">
           <div className="bg-[#000]/25 px-4 py-2 rounded-full flex gap-2 items-center cursor-pointer my-8 hover:bg-[#000]/40 transition-colors w-fit">
