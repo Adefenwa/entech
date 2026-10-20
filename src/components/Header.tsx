@@ -18,7 +18,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-2 py-1 px-2 rounded-full hover:bg-amber-50/10 hover:outline hover:outline-amber-300 hover:font-bold"
             >
               {link.label}
             </Link>

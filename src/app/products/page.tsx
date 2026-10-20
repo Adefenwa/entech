@@ -68,11 +68,12 @@ export default function Products() {
                 </p>
               </div>
               <h1 className="text-3xl font-bold text-[#12263f] my-4">
-                Know about gas leaks at home or away.
+                Know instantly when your gas leaks
               </h1>
               <p className="text-[#12263f] font-thin text-sm sm:text-base mb-7 ">
-                The detector sounds a loud alarm when gas is detected and can
-                send a phone alert over Wi-Fi, so you can check in while away.
+                Detects gas within seconds and triggers an alarm on the spot.
+                Wi-Fi or SMS alerts reach your phone, so you stay informed when
+                you’re away from home.
               </p>
               <p className="text-xs text-[#12263f]/50">
                 Early-access concept for an in-person demo. Product form may
@@ -356,14 +357,8 @@ export default function Products() {
                   35,000
                 </h2>
                 <p className="font-medium text-sm text-[#12263f] my-3">
-                  Free in-person demo. No payment now.
-                </p>
-                <p className="text-[#12263f]/80 text-xs my-3">
-                  Handoff. configured variants{" "}
-                  <span className="font-sans font-normal">₦</span>25,000 /{" "}
-                  <span className="font-sans font-normal">₦</span>
-                  35,000 / <span className="font-sans font-normal">₦</span>
-                  45,000. one retained per session
+                  Book a Demo, pay when you test and confirm the usability of
+                  the device.
                 </p>
               </div>
               <div id="button" className="md:w-[40%]">
@@ -394,11 +389,13 @@ export default function Products() {
                 </p>
               </div>
               <h1 className="text-3xl font-bold text-[#12263f] my-4">
-                Know your gas level before it runs low.
+                Know what is left in your cylinder before it uns out
+                unexpectedly.
               </h1>
               <p className="text-[#12263f] font-thin text-sm sm:text-base mb-7 ">
-                See your gas level, follow usage, and receive a low-gas alert in
-                a simple phone view before cooking is interrupted.
+                Track your gas level from your phone. Usage predictions and
+                low-gas alerts tell you when to refill, before cooking is
+                interrupted.
               </p>
               <p className="text-xs text-[#12263f]/50">
                 Early-access concept for an in-person demo. Product form may
@@ -684,14 +681,8 @@ export default function Products() {
                   35,000
                 </h2>
                 <p className="font-medium text-sm text-[#12263f] my-3">
-                  Free in-person demo. No payment now.
-                </p>
-                <p className="text-[#12263f]/80 text-xs my-3">
-                  Handoff. configured variants{" "}
-                  <span className="font-sans font-normal">₦</span>25,000 /{" "}
-                  <span className="font-sans font-normal">₦</span>
-                  35,000 / <span className="font-sans font-normal">₦</span>
-                  45,000. one retained per session
+                  Book a Demo, pay when you test and confirm the usability of
+                  the device.
                 </p>
               </div>
               <div id="button" className="md:w-[40%]">
