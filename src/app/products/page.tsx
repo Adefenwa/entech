@@ -33,7 +33,7 @@ export default function Products() {
 
   const containerClassName = "w-19/20 mx-auto";
   return (
-    <main id="wrapper" className="mt-5">
+    <main id="main" className="mt-5">
       <section id="switch" className="bg-[#FAF8F4]  px-4 py-10 ">
         <div className="flex justify-between w-full bg-white outline outline-[#12263f]/20 p-1 rounded-md">
           <button
