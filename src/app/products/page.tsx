@@ -363,7 +363,7 @@ export default function Products() {
               </div>
               <div id="button" className="md:w-[40%]">
                 <Link
-                  href="/"
+                  href="/early-access"
                   className="flex items-center gap-2 text-sm font-bold text-[#12263f] bg-amber-300 hover:bg-amber-200 py-3 justify-center rounded-full"
                 >
                   Get the Device
@@ -687,7 +687,7 @@ export default function Products() {
               </div>
               <div id="button" className="md:w-[40%]">
                 <Link
-                  href="/"
+                  href="/early-access"
                   className="flex items-center gap-2 text-sm font-bold text-[#12263f] bg-amber-300 hover:bg-amber-200 py-3 justify-center rounded-full"
                 >
                   Get the Device
